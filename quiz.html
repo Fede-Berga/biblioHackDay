@@ -65,29 +65,33 @@
 <h3 class="text-white tracking-tight text-xl sm:text-2xl font-semibold leading-tight text-left mb-6">What is the primary function of a compiler in computer science?</h3>
 <div class="flex flex-col gap-4">
 <label class="flex items-center gap-4 rounded-lg border-2 border-solid border-[#29382f] p-4 cursor-pointer hover:border-[#38e07b] transition-colors duration-200 has-[:checked]:border-[#38e07b] has-[:checked]:bg-[#38e07b]/10">
-<input checked="" class="h-5 w-5 appearance-none border-2 border-[#29382f] rounded-full bg-transparent text-transparent checked:border-[#38e07b] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-1 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1A221E]" name="question_1_answer" type="radio"/>
+<input checked="" class="h-5 w-5 appearance-none border-2 border-[#29382f] rounded-full bg-transparent text-transparent checked:border-[#38e07b] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-1 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1A221E]" name="question_1_answer" type="radio" value="translate"/>
 <span class="text-white text-base font-medium leading-normal flex-1">Translate high-level code to machine code</span>
 <span class="material-symbols-outlined text-transparent ml-auto has-[:checked]:text-[#38e07b]">check_circle</span>
 </label>
 <label class="flex items-center gap-4 rounded-lg border-2 border-solid border-[#29382f] p-4 cursor-pointer hover:border-[#38e07b] transition-colors duration-200 has-[:checked]:border-[#38e07b] has-[:checked]:bg-[#38e07b]/10">
-<input class="h-5 w-5 appearance-none border-2 border-[#29382f] rounded-full bg-transparent text-transparent checked:border-[#38e07b] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-1 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1A221E]" name="question_1_answer" type="radio"/>
+<input class="h-5 w-5 appearance-none border-2 border-[#29382f] rounded-full bg-transparent text-transparent checked:border-[#38e07b] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-1 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1A221E]" name="question_1_answer" type="radio" value="memory"/>
 <span class="text-white text-base font-medium leading-normal flex-1">Manage memory allocation</span>
 <span class="material-symbols-outlined text-transparent ml-auto has-[:checked]:text-[#38e07b]">check_circle</span>
 </label>
 <label class="flex items-center gap-4 rounded-lg border-2 border-solid border-[#29382f] p-4 cursor-pointer hover:border-[#38e07b] transition-colors duration-200 has-[:checked]:border-[#38e07b] has-[:checked]:bg-[#38e07b]/10">
-<input class="h-5 w-5 appearance-none border-2 border-[#29382f] rounded-full bg-transparent text-transparent checked:border-[#38e07b] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-1 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1A221E]" name="question_1_answer" type="radio"/>
+<input class="h-5 w-5 appearance-none border-2 border-[#29382f] rounded-full bg-transparent text-transparent checked:border-[#38e07b] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-1 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1A221E]" name="question_1_answer" type="radio" value="debug"/>
 <span class="text-white text-base font-medium leading-normal flex-1">Debug code errors</span>
 <span class="material-symbols-outlined text-transparent ml-auto has-[:checked]:text-[#38e07b]">check_circle</span>
 </label>
 <label class="flex items-center gap-4 rounded-lg border-2 border-solid border-[#29382f] p-4 cursor-pointer hover:border-[#38e07b] transition-colors duration-200 has-[:checked]:border-[#38e07b] has-[:checked]:bg-[#38e07b]/10">
-<input class="h-5 w-5 appearance-none border-2 border-[#29382f] rounded-full bg-transparent text-transparent checked:border-[#38e07b] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-1 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1A221E]" name="question_1_answer" type="radio"/>
+<input class="h-5 w-5 appearance-none border-2 border-[#29382f] rounded-full bg-transparent text-transparent checked:border-[#38e07b] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-1 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1A221E]" name="question_1_answer" type="radio" value="optimize"/>
 <span class="text-white text-base font-medium leading-normal flex-1">Optimize code performance</span>
 <span class="material-symbols-outlined text-transparent ml-auto has-[:checked]:text-[#38e07b]">check_circle</span>
 </label>
 </div>
+<div id="mrBicoAdvicePanel" class="mt-6 p-4 bg-[#2A3B32] rounded-lg shadow-md hidden">
+  <p class="text-sm font-semibold text-[#94e0b2] mb-2">Mr. Bico says:</p>
+  <p id="mrBicoMessageText" class="text-white text-sm"></p>
+</div>
 </div>
 <div class="flex px-4 py-6 justify-end mt-4">
-<button class="flex items-center justify-center gap-2 cursor-pointer overflow-hidden rounded-full h-auto px-6 py-3 bg-[#94e0b2] text-[#121714] text-sm font-bold leading-normal hover:bg-[#7fca9d] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#111714]">
+<button id="submitAnswerButton" class="flex items-center justify-center gap-2 cursor-pointer overflow-hidden rounded-full h-auto px-6 py-3 bg-[#94e0b2] text-[#121714] text-sm font-bold leading-normal hover:bg-[#7fca9d] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#111714]">
 <span class="truncate">Submit Answer</span>
 <span class="material-symbols-outlined">arrow_forward</span>
 </button>
@@ -97,4 +101,56 @@
 <footer class="px-10 py-6 border-t border-[#29382f] text-center mt-auto">
   <p class="text-sm text-[#9eb7a8]">© 2024 QuizMaster. All rights reserved. University Edition.</p>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const submitButton = document.getElementById('submitAnswerButton');
+    const advicePanel = document.getElementById('mrBicoAdvicePanel');
+    const adviceMessageText = document.getElementById('mrBicoMessageText');
+    const radioButtons = document.querySelectorAll('input[name="question_1_answer"]');
+
+    if (submitButton) {
+        submitButton.addEventListener('click', function() {
+            let selectedValue = null;
+            for (const radioButton of radioButtons) {
+                if (radioButton.checked) {
+                    selectedValue = radioButton.value;
+                    break;
+                }
+            }
+
+            if (!selectedValue) {
+                // If no answer is selected, you could show a generic message or alert
+                // For now, Mr. Bico can prompt to select an answer.
+                adviceMessageText.textContent = "Mr. Bico says: Please select an answer before submitting!";
+                advicePanel.classList.remove('hidden');
+                return;
+            }
+
+            const correctAnswer = "translate";
+            let message = "";
+
+            if (selectedValue === correctAnswer) {
+                message = "Mr. Bico says: Excellent! Translating high-level code to machine code is indeed the primary function of a compiler.";
+            } else if (selectedValue === "memory") {
+                message = "Mr. Bico says: Not quite. While memory management is important, a compiler's main job is to translate code. Mr. Bico suggests double-checking the definitions!";
+            } else if (selectedValue === "debug") {
+                message = "Mr. Bico says: Close, but not the primary function. Debugging tools help with errors, but the compiler does the translation. Mr. Bico advises to focus on the core role!";
+            } else if (selectedValue === "optimize") {
+                message = "Mr. Bico says: That's a key function of some compilers, but it's secondary to translation. Mr. Bico reminds you that translation comes first!";
+            } else {
+                message = "Mr. Bico says: Hmm, that's an unexpected answer. Let's review the compiler's functions!"; // Fallback
+            }
+
+            adviceMessageText.textContent = message;
+            advicePanel.classList.remove('hidden');
+
+            // Disable radio buttons and submit button
+            radioButtons.forEach(rb => rb.disabled = true);
+            submitButton.disabled = true;
+            // Optional: Change button text
+            // submitButton.textContent = 'Answer Submitted';
+        });
+    }
+});
+</script>
 </body></html>
