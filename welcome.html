@@ -26,7 +26,7 @@
                 Log in to continue your learning journey.
               </p>
 </div>
-<form action="quiz.html" class="mt-8 space-y-6" method="POST">
+<form id="loginForm" class="mt-8 space-y-6">
 <input name="remember" type="hidden" value="true"/>
 <div class="rounded-md shadow-sm -space-y-px">
 <div>
@@ -52,7 +52,7 @@
 </div>
 </div>
 <div>
-<button class="group relative flex w-full justify-center rounded-full border border-transparent bg-[#38e07b] py-3 px-4 text-sm font-bold text-[#111714] hover:bg-[#2fbc6a] focus:outline-none focus:ring-2 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1a221e] transition-colors duration-150" type="submit">
+<button id="loginButton" class="group relative flex w-full justify-center rounded-full border border-transparent bg-[#38e07b] py-3 px-4 text-sm font-bold text-[#111714] hover:bg-[#2fbc6a] focus:outline-none focus:ring-2 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1a221e] transition-colors duration-150" type="button">
                   Log In
                 </button>
 </div>
@@ -67,5 +67,35 @@
 </main>
 </div>
 </div>
+<script>
+    const loginForm = document.getElementById('loginForm');
+    const loginButton = document.getElementById('loginButton');
+    const usernameInput = document.getElementById('username'); // Assuming this is the ID of the username input
+    const passwordInput = document.getElementById('password'); // Assuming this is the ID of the password input
 
+    if (loginButton) {
+      loginButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Optional: Basic validation (e.g., check if fields are filled)
+        if (!usernameInput.value || !passwordInput.value) {
+          // You could display an error message here if desired
+          // For now, just log to console and don't proceed
+          console.log("Username and password are required.");
+          // Potentially show a message to the user on the page
+          alert("Please enter username and password.");
+          return;
+        }
+
+        // Simulate login process
+        loginButton.disabled = true;
+        loginButton.textContent = 'Logging In...'; // Change button text
+
+        setTimeout(function() {
+          // Redirect to the dashboard page
+          window.location.href = 'dashboard.html'; // Will be updated to dashboard.html in a later step
+        }, 1500); // 1.5 second delay
+      });
+    }
+    </script>
 </body></html>
