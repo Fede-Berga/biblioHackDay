@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster - Sign Up</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Spline+Sans:wght@400;500;700" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="icon" href="data:image/x-icon;base64,">
+</head>
+<body class="bg-[#111714]" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-6 sm:px-10 py-4">
+                <div class="flex items-center gap-3 text-white">
+                    <svg class="h-8 w-8 text-[#38e07b]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+                    <h1 class="text-xl font-bold tracking-tight">QuizMaster</h1>
+                </div>
+            </header>
+            <main class="flex flex-1 items-center justify-center py-8 px-4 sm:px-6 lg:px-8">
+                <div class="w-full max-w-md space-y-8 rounded-xl bg-[#1a221e] p-8 sm:p-10 shadow-2xl">
+                    <div>
+                        <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-white">Create your account</h2>
+                        <p class="mt-2 text-center text-sm text-[#9eb7a8]">Join QuizMaster to start your learning journey.</p>
+                    </div>
+                    <form action="welcome.html" method="POST" class="mt-8 space-y-6">
+                        <div class="rounded-md shadow-sm -space-y-px">
+                            <div>
+                                <label for="username" class="sr-only">Username</label>
+                                <div class="relative">
+                                    <span class="material-symbols-outlined absolute inset-y-0 left-0 flex items-center pl-3 text-[#9eb7a8]">person</span>
+                                    <input id="username" name="username" type="text" required class="form-input relative block w-full appearance-none rounded-t-md border-0 bg-[#29382f] px-3 py-3 pl-10 text-white placeholder-[#9eb7a8] focus:z-10 focus:border-[#38e07b] focus:outline-none focus:ring-[#38e07b] sm:text-sm" placeholder="Username">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="email-address" class="sr-only">Email address</label>
+                                <div class="relative">
+                                    <span class="material-symbols-outlined absolute inset-y-0 left-0 flex items-center pl-3 text-[#9eb7a8]">email</span>
+                                    <input id="email-address" name="email" type="email" autocomplete="email" required class="form-input relative block w-full appearance-none border-0 bg-[#29382f] px-3 py-3 pl-10 text-white placeholder-[#9eb7a8] focus:z-10 focus:border-[#38e07b] focus:outline-none focus:ring-[#38e07b] sm:text-sm" placeholder="Email address">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="password" class="sr-only">Password</label>
+                                <div class="relative">
+                                    <span class="material-symbols-outlined absolute inset-y-0 left-0 flex items-center pl-3 text-[#9eb7a8]">lock</span>
+                                    <input id="password" name="password" type="password" autocomplete="new-password" required class="form-input relative block w-full appearance-none border-0 bg-[#29382f] px-3 py-3 pl-10 text-white placeholder-[#9eb7a8] focus:z-10 focus:border-[#38e07b] focus:outline-none focus:ring-[#38e07b] sm:text-sm" placeholder="Password">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="confirm-password" class="sr-only">Confirm Password</label>
+                                <div class="relative">
+                                    <span class="material-symbols-outlined absolute inset-y-0 left-0 flex items-center pl-3 text-[#9eb7a8]">lock_reset</span>
+                                    <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required class="form-input relative block w-full appearance-none rounded-b-md border-0 bg-[#29382f] px-3 py-3 pl-10 text-white placeholder-[#9eb7a8] focus:z-10 focus:border-[#38e07b] focus:outline-none focus:ring-[#38e07b] sm:text-sm" placeholder="Confirm Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="group relative flex w-full justify-center rounded-full border border-transparent bg-[#38e07b] py-3 px-4 text-sm font-bold text-[#111714] hover:bg-[#2fbc6a] focus:outline-none focus:ring-2 focus:ring-[#38e07b] focus:ring-offset-2 focus:ring-offset-[#1a221e] transition-colors duration-150">
+                                Sign Up
+                            </button>
+                        </div>
+                    </form>
+                    <p class="mt-6 text-center text-sm text-[#9eb7a8]">
+                        Already have an account? 
+                        <a href="welcome.html" class="font-medium text-[#38e07b] hover:text-[#2fbc6a]">Log In</a>
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
