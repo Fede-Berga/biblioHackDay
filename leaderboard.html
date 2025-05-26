@@ -1,0 +1,241 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B600%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-[#111714]" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-10 py-4">
+<div class="flex items-center gap-3 text-white">
+<svg class="h-7 w-7 text-[#38e07b]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2ZM11 17.5V16h2v1.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5Zm2.5-6.25c0 .41-.34.75-.75.75H12v1.25c0 .41-.34.75-.75.75h0c-.41 0-.75-.34-.75-.75V12h-.25c-.41 0-.75-.34-.75-.75s.34-.75.75-.75H11V9.25c0-.41.34-.75.75-.75h0c.41 0 .75.34.75.75V10.5h.25c.41 0 .75.34.75.75Z" fill-rule="evenodd"></path>
+</svg>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">QuizMaster</h2>
+</div>
+<nav class="flex items-center gap-6">
+<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Home</a>
+<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Quizzes</a>
+<a class="text-[#38e07b] text-sm font-semibold leading-normal" href="#">Leaderboard</a>
+<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-[#1c2620] hover:bg-[#29382f] text-[#9eb7a8] hover:text-white transition-colors">
+<span class="material-icons text-xl">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[#38e07b]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHHvXdF5AQyxyqp9pGJVciXt4JFZGlzVCgV1LpKidx8DPtnVrGWF9qtLY5redYnF5tkyDcrtXs6z5qZntJx4GB4Rj4gnVuQhigaqBM0EvKDDWnemdr3UUgD5B8qm-4kSOo2rj40Py1JeZCtX7l9AcUDqB8ZLBlt_YwvcQRKL22tCXaIYA3uXr2gRPOa_KHrxscoNvGX9b1BUruMDnJcu0WzgkVu5yYoP-C8VrRwl4jPm868-2EpaoiADAaOYTdkgoYoLDjmr68Dfix");'></div>
+</div>
+</header>
+<main class="px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-8 lg:py-12">
+<div class="layout-content-container flex flex-col max-w-5xl flex-1 gap-8">
+<div class="flex flex-col items-center text-center gap-2">
+<h1 class="text-white text-4xl font-bold leading-tight tracking-tight">Leaderboard</h1>
+<p class="text-[#9eb7a8] text-lg font-normal leading-normal max-w-md">
+              See who's dominating the course and strive to climb the ranks!
+            </p>
+</div>
+<div class="w-full @container">
+<div class="overflow-hidden rounded-xl border border-[#29382f] bg-[#161e1a]">
+<table class="w-full">
+<thead>
+<tr class="bg-[#1c2620]">
+<th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-[#9eb7a8] w-16 text-center">Rank</th>
+<th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-[#9eb7a8]">User</th>
+<th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-[#9eb7a8] w-24 text-right">Score</th>
+<th class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-[#9eb7a8] w-48">Progress</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#29382f]">
+<tr class="hover:bg-[#1c2620] transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="text-xl font-bold text-[#38e07b]">1</span>
+<span class="material-icons text-2xl text-yellow-400 -translate-y-0.5">emoji_events</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img alt="Sophia Clark" class="h-10 w-10 rounded-full object-cover border-2 border-[#38e07b]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo_sSgHcolUYVkHlVOoR3OrrTYacAlzkcxBldmQs93CoAbIRqqaa4KnB055zUYdNjg--CgoqqnSmdaQX82zX3qT8hLXgfWwW3KN5O6cojm-mBs58C9-y35rx6XOawCYTXp3LuWBiMiBfC-As-YzkbCtW2yL9giIY0u8ZIaJ4Z2oKg1ukBXTCs6-PatLC0hwnfA5eE4YmCSSnneR1i8lib8mw07xZvaJWAzyzZ9-ERn3-j_RLPfqxUNIPtjjPlnILgfGkTrXWkVmTUt"/>
+<div>
+<div class="text-sm font-semibold text-white">Sophia Clark</div>
+<div class="text-xs text-[#9eb7a8]">@sophclark</div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right">
+<span class="text-sm font-semibold text-white">950</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-full h-2.5 rounded-full bg-[#29382f] overflow-hidden">
+<div class="h-full rounded-full bg-[#38e07b]" style="width: 95%;"></div>
+</div>
+<span class="text-xs font-medium text-[#38e07b]">95%</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-[#1c2620] transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="text-lg font-semibold text-slate-300 group-hover:text-white">2</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img alt="Ethan Miller" class="h-10 w-10 rounded-full object-cover border-2 border-transparent group-hover:border-[#38e07b]/50 transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByGFBl-Y55Jyg-1a3wfCfy2VZ-3_nS9PmuxKbsVgHuPpAizsrX51TL1xfH6GDvFz2HSaYR7U4mPbiOIR7gximYm-ebPvtJJwgMCBZzgMisPKgisPrtds93Q7Yeh7TUwsw2nT00G7RqRcFC4A7tQAHAXg16lYyHjnPivgHpXnutEfcromRQtw-tYi1Mb4q_W40paKEskU9LsvlGD_9Ce5wIFfhHEGm8cySvhNEybbzQIWUZkf5GgSzMuO4Z-2EvQ_avgwZWcquC-sWC"/>
+<div>
+<div class="text-sm font-medium text-white">Ethan Miller</div>
+<div class="text-xs text-[#9eb7a8]">@ethanm</div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right">
+<span class="text-sm font-medium text-white">920</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-full h-2.5 rounded-full bg-[#29382f] overflow-hidden">
+<div class="h-full rounded-full bg-slate-400 group-hover:bg-[#38e07b] transition-colors" style="width: 92%;"></div>
+</div>
+<span class="text-xs font-medium text-slate-400 group-hover:text-[#38e07b] transition-colors">92%</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-[#1c2620] transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="text-lg font-semibold text-slate-300 group-hover:text-white">3</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img alt="Olivia Davis" class="h-10 w-10 rounded-full object-cover border-2 border-transparent group-hover:border-[#38e07b]/50 transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Znx9f-zjDvJgybaKFPliLTuUpSX859jEuBunOdL9q52VbPyZq3iCogwa5BAyqtjuKCpUk-su6wIACnng7_LrqrWdU1eMYZKGRoc3qYLBoj-M8NhLvs6zVlmu2RZiQMi_Fg7PagNx0MR3S2OkU3qyDqkMaXr8KuvrB-dfUJEta2uWgZH8xSz31XBHpwirw86Vt0tZeZI7WcFTYSCegR21DffIhPo2aykfKDoa3mN7Ia_oWF3pO4Kz0ehkez0MmEDFgAF7rx5KjBry"/>
+<div>
+<div class="text-sm font-medium text-white">Olivia Davis</div>
+<div class="text-xs text-[#9eb7a8]">@oliviad</div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right">
+<span class="text-sm font-medium text-white">900</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-full h-2.5 rounded-full bg-[#29382f] overflow-hidden">
+<div class="h-full rounded-full bg-slate-400 group-hover:bg-[#38e07b] transition-colors" style="width: 90%;"></div>
+</div>
+<span class="text-xs font-medium text-slate-400 group-hover:text-[#38e07b] transition-colors">90%</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-[#1c2620] transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="text-base font-medium text-[#9eb7a8] group-hover:text-white">4</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img alt="Noah Wilson" class="h-10 w-10 rounded-full object-cover border-2 border-transparent group-hover:border-[#38e07b]/50 transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChiJdyTcRKc1j-Cp2Cryw95R535ceGfa5cQoN_n5YNG3V3usetY_gwuw_MuAHEAWRxGueoMS40hpQUfhU2E2Ct-0Dul7tE9Unoz9MEv0gLneSqgCQ6ooDhEx8E-Ud2w8HDippgBWtBPqBqVH1xsMFVAim42IlONKQurrDWjg_Qlc_yHbFfL8ZmX-Av_6g4FbpmEwh-vs76xu0F2tm-HenGOKqwzRBh2-dnBoaTQT4Ho64GLMS5mUW27hnZnUfVBECTqhF80XxcAOfb"/>
+<div>
+<div class="text-sm font-normal text-white">Noah Wilson</div>
+<div class="text-xs text-[#9eb7a8]">@noahw</div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right">
+<span class="text-sm font-normal text-white">880</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-full h-2.5 rounded-full bg-[#29382f] overflow-hidden">
+<div class="h-full rounded-full bg-slate-500 group-hover:bg-[#38e07b] transition-colors" style="width: 88%;"></div>
+</div>
+<span class="text-xs font-medium text-slate-500 group-hover:text-[#38e07b] transition-colors">88%</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-[#1c2620] transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="text-base font-medium text-[#9eb7a8] group-hover:text-white">5</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img alt="Ava Thompson" class="h-10 w-10 rounded-full object-cover border-2 border-transparent group-hover:border-[#38e07b]/50 transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Znx9f-zjDvJgybaKFPliLTuUpSX859jEuBunOdL9q52VbPyZq3iCogwa5BAyqtjuKCpUk-su6wIACnng7_LrqrWdU1eMYZKGRoc3qYLBoj-M8NhLvs6zVlmu2RZiQMi_Fg7PagNx0MR3S2OkU3qyDqkMaXr8KuvrB-dfUJEta2uWgZH8xSz31XBHpwirw86Vt0tZeZI7WcFTYSCegR21DffIhPo2aykfKDoa3mN7Ia_oWF3pO4Kz0ehkez0MmEDFgAF7rx5KjBry"/>
+<div>
+<div class="text-sm font-normal text-white">Ava Thompson</div>
+<div class="text-xs text-[#9eb7a8]">@avat</div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right">
+<span class="text-sm font-normal text-white">860</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-full h-2.5 rounded-full bg-[#29382f] overflow-hidden">
+<div class="h-full rounded-full bg-slate-500 group-hover:bg-[#38e07b] transition-colors" style="width: 86%;"></div>
+</div>
+<span class="text-xs font-medium text-slate-500 group-hover:text-[#38e07b] transition-colors">86%</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-[#1c2620] transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="text-base font-medium text-[#9eb7a8] group-hover:text-white">6</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img alt="Liam Garcia" class="h-10 w-10 rounded-full object-cover border-2 border-transparent group-hover:border-[#38e07b]/50 transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Znx9f-zjDvJgybaKFPliLTuUpSX859jEuBunOdL9q52VbPyZq3iCogwa5BAyqtjuKCpUk-su6wIACnng7_LrqrWdU1eMYZKGRoc3qYLBoj-M8NhLvs6zVlmu2RZiQMi_Fg7PagNx0MR3S2OkU3qyDqkMaXr8KuvrB-dfUJEta2uWgZH8xSz31XBHpwirw86Vt0tZeZI7WcFTYSCegR21DffIhPo2aykfKDoa3mN7Ia_oWF3pO4Kz0ehkez0MmEDFgAF7rx5KjBry"/>
+<div>
+<div class="text-sm font-normal text-white">Liam Garcia</div>
+<div class="text-xs text-[#9eb7a8]">@liamg</div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right">
+<span class="text-sm font-normal text-white">840</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-full h-2.5 rounded-full bg-[#29382f] overflow-hidden">
+<div class="h-full rounded-full bg-slate-500 group-hover:bg-[#38e07b] transition-colors" style="width: 84%;"></div>
+</div>
+<span class="text-xs font-medium text-slate-500 group-hover:text-[#38e07b] transition-colors">84%</span>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-[#1c2620] transition-colors group">
+<td class="px-6 py-4 whitespace-nowrap text-center">
+<span class="text-base font-medium text-[#9eb7a8] group-hover:text-white">7</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img alt="Isabella Rodriguez" class="h-10 w-10 rounded-full object-cover border-2 border-transparent group-hover:border-[#38e07b]/50 transition-colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChrdpzpYJWI3phFqsNCdJB2Ae0fs2_2Nhwm8itE2vTPT34WKgTmbV_TNRH3LGnVtsn1jvfzrqLmcqfdI-02Wwdg59j_Cmyfj-HuRLJIkOtrf3buvF5Wl_sU_yp8MhXvy3kAx-SrqCOCnovUkT31ZNyNjXLCztoZdZ7eYp6hMtovs-82qs1Oj8xTZMKVA6uQiDMk_gxu_LxP9CbP9dnNNo-dBpTXVRI1u9hQA8IpSNODmRsG0NFkVS78cBdYH0wR-g9GMR3LSiNVect"/>
+<div>
+<div class="text-sm font-normal text-white">Isabella Rodriguez</div>
+<div class="text-xs text-[#9eb7a8]">@isabellar</div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 whitespace-nowrap text-right">
+<span class="text-sm font-normal text-white">820</span>
+</td>
+<td class="px-6 py-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-full h-2.5 rounded-full bg-[#29382f] overflow-hidden">
+<div class="h-full rounded-full bg-slate-500 group-hover:bg-[#38e07b] transition-colors" style="width: 82%;"></div>
+</div>
+<span class="text-xs font-medium text-slate-500 group-hover:text-[#38e07b] transition-colors">82%</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+<footer class="px-10 py-6 border-t border-[#29382f] text-center">
+<p class="text-sm text-[#9eb7a8]">© 2024 QuizMaster. All rights reserved. University Edition.</p>
+</footer>
+</div>
+</div>
+
+</body></html>
