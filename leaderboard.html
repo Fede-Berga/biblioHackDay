@@ -3,7 +3,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
 <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B600%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<title>Stitch Design</title>
+<title>QuizMaster - Leaderboard</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
@@ -11,23 +11,25 @@
 <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
 <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-10 py-4">
-<div class="flex items-center gap-3 text-white">
+<a href="quiz.html" class="flex items-center gap-3 text-white">
 <svg class="h-7 w-7 text-[#38e07b]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2ZM11 17.5V16h2v1.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5Zm2.5-6.25c0 .41-.34.75-.75.75H12v1.25c0 .41-.34.75-.75.75h0c-.41 0-.75-.34-.75-.75V12h-.25c-.41 0-.75-.34-.75-.75s.34-.75.75-.75H11V9.25c0-.41.34-.75.75-.75h0c.41 0 .75.34.75.75V10.5h.25c.41 0 .75.34.75.75Z" fill-rule="evenodd"></path>
 </svg>
 <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">QuizMaster</h2>
-</div>
+</a>
 <nav class="flex items-center gap-6">
-<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Home</a>
-<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Quizzes</a>
-<a class="text-[#38e07b] text-sm font-semibold leading-normal" href="#">Leaderboard</a>
-<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Profile</a>
+<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="quiz.html">Home</a>
+<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="quiz.html">Quizzes</a>
+<a class="text-[#38e07b] text-sm font-semibold leading-normal" href="leaderboard.html">Leaderboard</a>
+<a class="text-[#9eb7a8] hover:text-white text-sm font-medium leading-normal transition-colors" href="profile.html">Profile</a>
 </nav>
 <div class="flex items-center gap-4">
 <button class="flex items-center justify-center rounded-full h-10 w-10 bg-[#1c2620] hover:bg-[#29382f] text-[#9eb7a8] hover:text-white transition-colors">
 <span class="material-icons text-xl">notifications</span>
 </button>
+<a href="profile.html">
 <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[#38e07b]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHHvXdF5AQyxyqp9pGJVciXt4JFZGlzVCgV1LpKidx8DPtnVrGWF9qtLY5redYnF5tkyDcrtXs6z5qZntJx4GB4Rj4gnVuQhigaqBM0EvKDDWnemdr3UUgD5B8qm-4kSOo2rj40Py1JeZCtX7l9AcUDqB8ZLBlt_YwvcQRKL22tCXaIYA3uXr2gRPOa_KHrxscoNvGX9b1BUruMDnJcu0WzgkVu5yYoP-C8VrRwl4jPm868-2EpaoiADAaOYTdkgoYoLDjmr68Dfix");'></div>
+</a>
 </div>
 </header>
 <main class="px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-8 lg:py-12">
