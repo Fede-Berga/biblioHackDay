@@ -10,37 +10,36 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="icon" href="data:image/x-icon;base64,">
 </head>
-<body class="bg-[#121714]" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
-    <div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
-        <div class="layout-container flex h-full grow flex-col">
-            <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2b362f] px-10 py-3">
-                <div class="flex items-center gap-4 text-white">
-                    <a href="quiz.html">
-                        <svg class="h-8 w-8 text-[#94e0b2]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
-                    </a>
-                    <a href="quiz.html">
-                        <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">QuizMaster</h2>
-                    </a>
-                </div>
-                <div class="flex flex-1 justify-end gap-6">
-                    <nav class="flex items-center gap-6">
-                        <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="quiz.html">Home</a>
-                        <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="courses.html">Courses</a>
-                        <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="quiz.html">Quizzes</a>
-                        <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="leaderboard.html">Leaderboard</a>
-                    </nav>
-                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-[#2b362f] hover:bg-[#3e4f45] text-white transition-colors">
-                        <span class="material-symbols-outlined text-xl">notifications</span>
-                    </button>
-                    <a href="profile.html">
-                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[#94e0b2]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdLmxNOuZVlGqs3_wKaGt1rCy2I1YQEQnucLJC3Ua_KEAJriF9G_SbWKgTuAl85y1yxN6LBUXn9D52TE0eHFtc6s0CgPJymF-y7P4fFRpm_YHOotP06zqvc6HGLimhSm5NPq0e1zVlMwa5Wp_UGAo8nbWJ0TkzPUYuJhzsfbi1h4YW1F874X2lxD_ZxvoR1ytHRsOxsA4r3D_fKOyB6DrlP0RooiUxs9zTuVvq59YbbIFbFMtA-0iYOQ0m_35lMrNwrOhWEHsoRfHu");'></div>
-                    </a>
-                </div>
-            </header>
+<body class="bg-[#111714] flex flex-col min-h-screen" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-10 py-3">
+  <div class="flex items-center gap-4 text-white">
+    <a href="dashboard.html" class="flex items-center gap-3 text-white">
+      <div class="size-7 text-[#38e07b]">
+        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+      </div>
+      <h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">QuizMaster</h2>
+    </a>
+  </div>
+  <nav class="flex items-center gap-x-6">
+    <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal px-3 py-2 rounded-md transition-colors" href="dashboard.html">Home</a>
+    <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal px-3 py-2 rounded-md transition-colors" href="courses.html">Courses</a>
+    <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal px-3 py-2 rounded-md transition-colors" href="quiz.html">Quizzes</a>
+    <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal px-3 py-2 rounded-md transition-colors" href="leaderboard.html">Leaderboard</a>
+    <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal px-3 py-2 rounded-md transition-colors" href="chat.html">Chat</a>
+  </nav>
+  <div class="flex items-center gap-4">
+    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-[#1c2620] hover:bg-[#29382f] text-[#9eb7a8] hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-xl">notifications</span>
+    </button>
+    <a href="profile.html">
+      <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-[#38e07b] hover:border-[#38e07b] transition-colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-GSR9M3MMgUYrMgv8K95s0wvqh6bXy8jk7N35vsNmDKj1JEOfrkpTw5qwqwmUrQfFUnVSefxjn0MRJY4jvf3Q5rIyBINHHruMCXPtf1N6FcDorIbVH22f498iR19fZSoS5kOjXjUjKDc4UlfoTBX7vGffA52PDZsoTp9SeEH3DqgY6LEL-3PKia1FhHcQMZEGQL8d65V-3PEs2F_ewkSsaBPHPW5EoKG8Ec8RtcH-ejhHQ9TseWPMZDI5jxQIn8BHy7osS9-pYcXg");'></div>
+    </a>
+  </div>
+</header>
             <main class="px-10 sm:px-20 md:px-40 flex flex-1 justify-center py-8">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-8">
                     <h1 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em]">Edit Profile</h1>
-                    <section class="p-6 bg-[#1e2520] rounded-xl shadow-lg">
+                    <section class="p-6 bg-[#1A221E] rounded-xl shadow-lg">
                         <form action="profile.html" method="POST" class="space-y-6">
                             <div>
                                 <label for="fullName" class="block text-sm font-medium text-[#a2b4a9]">Full Name</label>
@@ -62,10 +61,8 @@
                     </section>
                 </div>
             </main>
-            <footer class="px-10 py-6 border-t border-[#2b362f] text-center">
-                <p class="text-sm text-[#a2b4a9]">© 2024 QuizMaster. All rights reserved. University Edition.</p>
+            <footer class="px-10 py-6 border-t border-[#29382f] text-center mt-auto">
+                <p class="text-sm text-[#9eb7a8]">© 2024 QuizMaster. All rights reserved. University Edition.</p>
             </footer>
-        </div>
-    </div>
 </body>
 </html>
